@@ -1,7 +1,7 @@
-package org.greenem.plugins.TEMPLATE_PLUGIN.util;
+package org.greenem.plugins.TEMPLATEPLUGIN.util;
 
-import static org.greenem.plugins.TEMPLATE_PLUGIN.util.SimpleLogger.debug;
-import static org.greenem.plugins.TEMPLATE_PLUGIN.util.SimpleLogger.log;
+import static org.greenem.plugins.TEMPLATEPLUGIN.util.SimpleLogger.debug;
+import static org.greenem.plugins.TEMPLATEPLUGIN.util.SimpleLogger.log;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

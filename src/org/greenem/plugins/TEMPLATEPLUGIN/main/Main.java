@@ -1,9 +1,9 @@
-package org.greenem.plugins.TEMPLATE_PLUGIN.main;
+package org.greenem.plugins.TEMPLATEPLUGIN.main;
 
-import static org.greenem.plugins.TEMPLATE_PLUGIN.util.SimpleLogger.debug;
-import static org.greenem.plugins.TEMPLATE_PLUGIN.util.SimpleLogger.log;
-import static org.greenem.plugins.TEMPLATE_PLUGIN.util.Stash.isSenderAPlayer;
-import static org.greenem.plugins.TEMPLATE_PLUGIN.util.Stash.isSenderAPlayerOrConsole;
+import static org.greenem.plugins.TEMPLATEPLUGIN.util.SimpleLogger.debug;
+import static org.greenem.plugins.TEMPLATEPLUGIN.util.SimpleLogger.log;
+import static org.greenem.plugins.TEMPLATEPLUGIN.util.Stash.isSenderAPlayer;
+import static org.greenem.plugins.TEMPLATEPLUGIN.util.Stash.isSenderAPlayerOrConsole;
 
 import java.io.File;
 import org.bukkit.event.Listener;
@@ -14,12 +14,12 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.greenem.plugins.TEMPLATE_PLUGIN.config.ConfigOperations;
-import org.greenem.plugins.TEMPLATE_PLUGIN.data.ProjectInfo;
-import org.greenem.plugins.TEMPLATE_PLUGIN.data.References;
-import org.greenem.plugins.TEMPLATE_PLUGIN.util.DebugModeSwitch;
-import org.greenem.plugins.TEMPLATE_PLUGIN.util.OsDependent;
-import org.greenem.plugins.TEMPLATE_PLUGIN.util.SimpleLogger;
+import org.greenem.plugins.TEMPLATEPLUGIN.config.ConfigOperations;
+import org.greenem.plugins.TEMPLATEPLUGIN.data.ProjectInfo;
+import org.greenem.plugins.TEMPLATEPLUGIN.data.References;
+import org.greenem.plugins.TEMPLATEPLUGIN.util.DebugModeSwitch;
+import org.greenem.plugins.TEMPLATEPLUGIN.util.OsDependent;
+import org.greenem.plugins.TEMPLATEPLUGIN.util.SimpleLogger;
 
 public class Main extends JavaPlugin implements Listener {
 	public Plugin plugin = this;
@@ -78,7 +78,7 @@ public class Main extends JavaPlugin implements Listener {
 	private void initFiles() {
 		ProjectInfo.serverDirectory = Bukkit.getWorldContainer();
 		ProjectInfo.configsDirectory = new File(ProjectInfo.serverDirectory, "plugins/configs");
-		ProjectInfo.pluginConfigDirectory = new File(ProjectInfo.configsDirectory, "ManhuntAndWorldReset");
+		ProjectInfo.pluginConfigDirectory = new File(ProjectInfo.configsDirectory, "TEMPLATE_PLUGIN_FULL");
 		ProjectInfo.pluginConfigDirectory.mkdirs();
 	}
 	

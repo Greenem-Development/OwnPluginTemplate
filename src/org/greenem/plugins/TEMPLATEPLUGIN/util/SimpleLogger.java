@@ -1,7 +1,7 @@
-package org.greenem.plugins.TEMPLATE_PLUGIN.util;
+package org.greenem.plugins.TEMPLATEPLUGIN.util;
 
 import org.bukkit.Bukkit;
-import org.greenem.plugins.TEMPLATE_PLUGIN.data.ProjectInfo;
+import org.greenem.plugins.TEMPLATEPLUGIN.data.ProjectInfo;
 
 public class SimpleLogger {
 	public static String pluginName = ProjectInfo.projectName;

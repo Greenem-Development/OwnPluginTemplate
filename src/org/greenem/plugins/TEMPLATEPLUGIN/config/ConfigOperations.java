@@ -1,16 +1,16 @@
-package org.greenem.plugins.TEMPLATE_PLUGIN.config;
+package org.greenem.plugins.TEMPLATEPLUGIN.config;
 
-import static org.greenem.plugins.TEMPLATE_PLUGIN.data.ProjectInfo.pluginConfigDirectory;
-import static org.greenem.plugins.TEMPLATE_PLUGIN.util.SimpleLogger.debug;
-import static org.greenem.plugins.TEMPLATE_PLUGIN.util.SimpleLogger.log;
+import static org.greenem.plugins.TEMPLATEPLUGIN.data.ProjectInfo.pluginConfigDirectory;
+import static org.greenem.plugins.TEMPLATEPLUGIN.util.SimpleLogger.debug;
+import static org.greenem.plugins.TEMPLATEPLUGIN.util.SimpleLogger.log;
 
 import java.io.File;
 import java.io.IOException;
 
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.greenem.plugins.TEMPLATE_PLUGIN.data.Lines;
-import org.greenem.plugins.TEMPLATE_PLUGIN.versionCompatibility.ConfigCompatibility;
+import org.greenem.plugins.TEMPLATEPLUGIN.data.Lines;
+import org.greenem.plugins.TEMPLATEPLUGIN.versionCompatibility.ConfigCompatibility;
 
 public class ConfigOperations {
 	public static void updateAndLoadConfig() {

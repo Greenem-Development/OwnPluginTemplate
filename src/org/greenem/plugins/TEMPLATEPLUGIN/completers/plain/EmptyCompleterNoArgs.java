@@ -1,4 +1,4 @@
-package org.greenem.plugins.TEMPLATE_PLUGIN.completers.plain;
+package org.greenem.plugins.TEMPLATEPLUGIN.completers.plain;
 
 import java.util.ArrayList;
 import java.util.List;

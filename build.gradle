@@ -6,7 +6,7 @@
  */
 apply plugin: 'java'
 
-group 'org.greenem.plugins.manhunt'
+group 'org.greenem.plugins.TEMPLATE_PLUGIN'
 version '1.7.0'
 
 repositories {
@@ -32,7 +32,7 @@ sourceSets {
 }
 
 jar {
-	archiveBaseName =  'AdvancedManhunt'
+	archiveBaseName = 'TEMPLATE_PLUGIN'
     destinationDirectory.set(file("G:/SERVERS/Dev Server 1.18/plugins"))
     configurations.implementation.canBeResolved=true
     from { configurations.implementation.collect {

@@ -1,4 +1,4 @@
-package org.greenem.plugins.TEMPLATE_PLUGIN.util;
+package org.greenem.plugins.TEMPLATEPLUGIN.util;
 
 import org.bukkit.command.CommandSender;
 

@@ -1,4 +1,4 @@
-package org.greenem.plugins.TEMPLATE_PLUGIN.util;
+package org.greenem.plugins.TEMPLATEPLUGIN.util;
 
 public class StandartUtils {
 	public static boolean isInteger(String s) {

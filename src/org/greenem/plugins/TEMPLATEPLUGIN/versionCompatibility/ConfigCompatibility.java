@@ -1,7 +1,7 @@
-package org.greenem.plugins.TEMPLATE_PLUGIN.versionCompatibility;
+package org.greenem.plugins.TEMPLATEPLUGIN.versionCompatibility;
 
-import static org.greenem.plugins.TEMPLATE_PLUGIN.util.SimpleLogger.debug;
-import static org.greenem.plugins.TEMPLATE_PLUGIN.util.SimpleLogger.log;
+import static org.greenem.plugins.TEMPLATEPLUGIN.util.SimpleLogger.debug;
+import static org.greenem.plugins.TEMPLATEPLUGIN.util.SimpleLogger.log;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,9 +10,9 @@ import java.io.IOException;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.greenem.plugins.TEMPLATE_PLUGIN.config.ConfigOperations;
-import org.greenem.plugins.TEMPLATE_PLUGIN.data.Lines;
-import org.greenem.plugins.TEMPLATE_PLUGIN.data.ProjectInfo;
+import org.greenem.plugins.TEMPLATEPLUGIN.config.ConfigOperations;
+import org.greenem.plugins.TEMPLATEPLUGIN.data.Lines;
+import org.greenem.plugins.TEMPLATEPLUGIN.data.ProjectInfo;
 
 public class ConfigCompatibility {
 	public static void updateConfig() {
