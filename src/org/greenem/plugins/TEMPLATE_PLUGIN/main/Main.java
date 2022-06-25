@@ -10,23 +10,16 @@ import org.bukkit.event.Listener;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
-import org.bukkit.command.CommandException;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.generator.ChunkGenerator;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.greenem.plugins.TEMPLATE_PLUGIN.completers.plain.EmptyCompleter1Arg;
-import org.greenem.plugins.TEMPLATE_PLUGIN.completers.plain.EmptyCompleterNoArgs;
 import org.greenem.plugins.TEMPLATE_PLUGIN.config.ConfigOperations;
-import org.greenem.plugins.TEMPLATE_PLUGIN.coreDependent.NonBukkit;
 import org.greenem.plugins.TEMPLATE_PLUGIN.data.ProjectInfo;
 import org.greenem.plugins.TEMPLATE_PLUGIN.data.References;
 import org.greenem.plugins.TEMPLATE_PLUGIN.util.DebugModeSwitch;
 import org.greenem.plugins.TEMPLATE_PLUGIN.util.OsDependent;
 import org.greenem.plugins.TEMPLATE_PLUGIN.util.SimpleLogger;
-import org.greenem.plugins.TEMPLATE_PLUGIN.util.Stash;
 
 public class Main extends JavaPlugin implements Listener {
 	public Plugin plugin = this;
@@ -38,16 +31,16 @@ public class Main extends JavaPlugin implements Listener {
 	
 	@Override
 	public void onEnable() {
-		log(ChatColor.GREEN + "Advanced Manhunt plugin has been enabled!");
+		instance = this;
+		log(ProjectInfo.projectName + "plugin has been enabled!"); // ChatColor.GREEN?
 		initAll();
 		ConfigOperations.updateAndLoadConfig();
 		finishInit();
-		instance = this;
 	}
 	
 	@Override
 	public void onDisable() {
-		log("Advanced Manhunt plugin has been disabled");
+		log(ProjectInfo.projectName + " plugin has been disabled");
 	}
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){

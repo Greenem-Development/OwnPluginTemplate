@@ -31,13 +31,11 @@ public class ConfigCompatibility {
 	}
 	
 	private static void updateConfigFrom1_3To1_4(YamlConfiguration c, String currentKey) {
-		String newPrefixString = "settings.";
-		currentKey = "launch-server-script-name";
-		moveValue(c, currentKey, newPrefixString + "world-resetting." + currentKey);
-		currentKey = "allow-gm-command-for-ops";
-		moveValue(c, currentKey, newPrefixString + ".commands." + currentKey);
-		currentKey = "allow-heal-command-for-ops";
-		moveValue(c, currentKey, newPrefixString + ".commands." + currentKey);
+//		String newPrefixString = "settings.";
+//		currentKey = "launch-server-script-name";
+//		moveValue(c, currentKey, newPrefixString + "world-resetting." + currentKey);
+//		currentKey = "allow-gm-command-for-ops";
+//		moveValue(c, currentKey, newPrefixString + ".commands." + currentKey);
 	}
 	
 	private static File getConfigFile() {

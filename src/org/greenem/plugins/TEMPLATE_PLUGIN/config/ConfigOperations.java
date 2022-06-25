@@ -1,7 +1,6 @@
 package org.greenem.plugins.TEMPLATE_PLUGIN.config;
 
 import static org.greenem.plugins.TEMPLATE_PLUGIN.data.ProjectInfo.pluginConfigDirectory;
-import static org.greenem.plugins.TEMPLATE_PLUGIN.data.ProjectInfo.serverDirectory;
 import static org.greenem.plugins.TEMPLATE_PLUGIN.util.SimpleLogger.debug;
 import static org.greenem.plugins.TEMPLATE_PLUGIN.util.SimpleLogger.log;
 
@@ -11,7 +10,6 @@ import java.io.IOException;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.greenem.plugins.TEMPLATE_PLUGIN.data.Lines;
-import org.greenem.plugins.TEMPLATE_PLUGIN.data.References;
 import org.greenem.plugins.TEMPLATE_PLUGIN.versionCompatibility.ConfigCompatibility;
 
 public class ConfigOperations {
@@ -70,9 +68,6 @@ public class ConfigOperations {
 				logCastEx(currentKey);
 			}
 		}
-		if(currentKey=="settings.world-resetting.launch-server-script-name") {
-			checkStartScript((String) returnValue);
-		}
 		return returnValue;
 	}
 	
@@ -100,15 +95,6 @@ public class ConfigOperations {
 			}
 		}
 		return hasChanges;
-	}
-	
-	private static void checkStartScript(String runFileString) {
-		if(ConfigData.disableNoExistingStartFileWarning) return;
-		if(!new File(serverDirectory, runFileString).exists()) {
-			String noExistingStartFileWarning = ChatColor.RED + "You haven't specified your run script file name in the config! "
-					+ "(for world reseting, but other things are fine)";
-			log(noExistingStartFileWarning);
-		}
 	}
 	
 	public static void logCastEx(String currentKey) {
