@@ -39,5 +39,4 @@ jar {
       //it.canBeResolved = true 
       it.isDirectory() ? it : zipTree(it) } 
     }
-    //with jar
 }

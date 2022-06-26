@@ -32,7 +32,7 @@ public class Main extends JavaPlugin implements Listener {
 	@Override
 	public void onEnable() {
 		instance = this;
-		log(ProjectInfo.projectName + "plugin has been enabled!"); // ChatColor.GREEN?
+		log(ProjectInfo.projectName + " plugin has been enabled!"); // ChatColor.GREEN?
 		initAll();
 		ConfigOperations.updateAndLoadConfig();
 		finishInit();
